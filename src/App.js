@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Header from "./components/header"
+import HeadingSlogan from "./components/HeadingSlogan"
+import Card from "./components/Card"
+import WhyUs from "./components/WhyUs"
+import Services from "./components/Services"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'><Header/>
+    <div className='main-home-page'>
+      <HeadingSlogan/>
     </div>
+    <div>
+      <Card/>
+      <WhyUs />
+      <Services/>
+    </div>
+    
+      <footer>
+        Copyright © BotspotAi 
+      </footer>
+    </div>
+
   );
 }
 

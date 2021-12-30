@@ -1,0 +1,387 @@
+
+/*-----------------------------------------header component-------------------------------------*/
+a{
+    text-decoration: none;
+    color:#fff;
+    transition: all 0.2s ease-in;
+}
+a:hover{
+    letter-spacing: 1px;
+}
+.main-header
+{
+    /* position: fixed; */
+  background-color: transparent;
+  color:#fff;
+  display: flex;
+  z-index: 1;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+.main-header h1{
+    margin-left:2%;
+}
+.navigation {
+    display: flex;
+    width: 45%;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto 10px;
+}
+.links
+{
+    list-style: none;
+    margin: auto;
+}
+.links img {
+    position: relative;
+    padding-top: 0px;
+    top: 8px;
+    left: 102%;
+}
+.links input {
+    width: 190px;
+    height: 20px;
+    padding: 7px;
+    background: #fff;
+    border:none;
+    border-bottom: 1px solid #fff;
+    color: #111;
+    outline: none;
+    padding-left: 10px;
+}
+/* .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+} */
+.icon-links
+{
+    display:none;
+}
+
+
+@media only screen and (max-width:480px) {
+
+    a{
+        
+        color:#111;
+        
+    }
+    
+    
+    .head-contents
+    {
+        overflow: hidden;
+    }
+    .main-header h1
+    {
+        font-size: 18px;
+    }
+    .head-contents img
+    {
+        display: block;
+    }
+    .navigation
+    {
+        display: flex;
+        background-color: #fff;
+        color: #111;
+        position: absolute;
+        width:100%;
+        height: auto;
+        padding:0px;
+        flex-direction: column;
+        top:9%;
+        left:-170%;
+        margin:0px;
+        transition: all 0.5s ease-in;
+    
+    }
+    
+    .search-bar input{
+        width:100%;
+        margin: none;
+    }
+    .links{
+        margin: none;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-bottom:10px ;
+        margin: 10px 0px;
+    }
+    .links:hover{
+        border: 1px solid #111;
+    }
+    .navigation li:last-child
+    {
+        display: none;
+    }
+    .search-bar img{
+        position: absolute;
+        height: 24px;
+        left: 90%;
+        top:8px;
+        width:auto;
+
+    }
+    .search-bar
+    {
+        position: absolute;
+        display: flex;
+        z-index: 20;
+        top:7px;
+        left:-100%;
+        margin: 0px 0px;
+        width:96%;
+        height: 40px;
+        transition: all 0.2s ease-in;
+    }
+
+    .icon-links{
+        display: flex;
+        justify-content: space-between;
+        margin: auto 10px;
+        width:40%;
+
+    }
+    .icon-links span {
+        width: 68%;
+        justify-content: space-around;
+        display: flex;
+    }
+    .icon-links img[alt= "hamburger"]
+    {
+        z-index: 11;
+
+    }
+    
+    
+}
+/*-----------------------------------------header component ends-------------------------------------*/
+/*-----------------------------------------HeadingSlogan component-------------------------------------*/
+
+.Slogan
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 56% auto;
+    top:140px;
+    left: 4%;
+    font-size: 25px;
+    color:#fff;
+    width: 90%;
+
+
+}
+.main-img
+{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 12%;
+}
+
+@media only screen and (max-width:480px)
+{
+    .Slogan
+    {
+        top:70px;
+        font-size: 12px;
+        grid-template-columns:100%;
+        text-align: center;
+        left:0;
+        width: 100%;
+    }
+    .main-img
+    {
+        top:0%;
+        width: auto;
+    }
+    .main-img img
+    {
+        width:40%;
+        height: auto;
+    }
+    .Slogan p{
+        width: 95%;
+        text-align: justify;
+        margin: 30px auto;
+        font-size: 16px ;
+        
+    };
+}
+/*-----------------------------------------HeadingSlogan ends component-------------------------------------*/
+/*-----------------------------------------Buttons component start-------------------------------------*/
+
+.reach-btn
+{
+    position: relative;
+}
+.button-without-arrow
+{
+    display: none;
+    
+}
+.button-without-arrow img{
+    display: none;
+}
+.button-with-arrow
+    {
+        
+        width:300px;
+        height: 58px;
+        background: transparent;
+        padding-top:0px;
+
+        text-align: center;
+        border:3px solid #111;
+        color: #111;
+        border-radius: 50px;
+    }
+    .button-with-arrow img{
+        margin-top:-5px;
+        margin-left: 5px;
+        transition: all 0.2s ease-in;
+    }
+    .button-with-arrow img:hover
+    {
+        margin-top:5px;
+    }
+
+@media only screen and (max-width:480px)
+{
+    .reach-btn
+    {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .button-without-arrow
+    {
+        display: block;
+        width:130px;
+        height: 40px;
+        background: transparent;
+        padding: auto;
+        border:2px solid #fff;
+        color: #fff;
+        border-radius: 50px;
+    }
+    .button-with-arrow
+    {
+        width: 200px;
+    }
+}
+/*-----------------------------------------Buttons component ends-------------------------------------*/
+/*-----------------------------------------Card component start-------------------------------------*/
+
+.info-card
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    position: relative;
+    padding: 2%;
+    top:450px;
+    background-color: #fff;
+    font-size: 35px;
+}
+.info-btns
+{
+    display: flex;
+    width:60%;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width:480px)
+{
+    .info-card
+    {
+        font-size: 17px;
+        
+        margin: 0px;
+        box-shadow: 0.5px 0.5px 10px 0.1px #111;
+    }
+    .info-btns
+    {
+        flex-direction: column;
+        height: 200px;
+    
+        
+    }
+}
+/*-----------------------------------------Card component ends-------------------------------------*/
+/*-----------------------------------------Why US Starts-------------------------------------*/
+
+.services {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 140%;
+    left: 6%;
+}
+@media only screen and (max-width:480px)
+{
+    .services {
+        display: flex;
+        width: 90%;
+        margin: auto 4%;
+        font-size: 20px;
+        position: absolute;
+        left: 1%;
+    }
+    .services p {
+        text-align: justify;
+    }
+    .services h2
+    {
+        position: relative;
+        text-align: center;
+        padding: 40px 20px;
+        
+        box-shadow: 1px 1px 10px 0px #111;
+    }
+}
+/*-----------------------------------------Why US Ends-------------------------------------*/
+/*-----------------------------------------Service cards starts-------------------------------------*/
+
+.eachCard
+{
+    text-align: center;
+    padding-top:8%;
+    border-radius: 15px;
+    margin: 10px 15px ;
+    border: 3px solid #6707b6;
+    
+}
+.eachCard img{
+    width:50px;
+    height: auto;
+}
+.service-holder {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    top: 222%;
+    height: 34em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width:480px)
+{
+    .service-holder
+    {
+        grid-template-columns: auto;
+        top: 242%;
+    }
+}
+/*-----------------------------------------Service cards ends-------------------------------------*/
+

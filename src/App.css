@@ -1,10 +1,41 @@
 .App {
-  text-align: center;
+  
+  height: 200vh;
+  overflow-y: visible;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+/*-----------------------------------main-home-page styling------------------------*/
+.main-home-page
+{
+  position: absolute;
+
+  top: 0;
+  z-index:-1;
+  height: 850px;
+  width: 100%;
+  background-image: linear-gradient(to top right,#6707b6,#8dc6ff);
+}
+.card-banner
+{
+  position: absolute;
+  top: 100vh;
+  z-index:0;
+  height: 100vh;
+  width: 100%;
+}
+
+
+@media only screen and (max-width:480px)
+{
+  .main-home-page
+  {
+    height: 880px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
